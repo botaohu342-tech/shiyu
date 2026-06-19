@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>胡诗钰作品集</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="回到顶部">
+        <span class="brand-mark">艺</span>
+        <span>
+          <strong>胡诗钰作品集</strong>
+          <small>2019-2026 studio archive</small>
+        </span>
+      </a>
+      <nav class="nav">
+        <a href="#gallery">作品墙</a>
+        <a href="#timeline">课程时间线</a>
+        <a href="#about">关于</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="meta-line">65 件作品 · 造艺美术</p>
+          <h1>把每一次课程里的想象，整理成一座小小美术馆。</h1>
+          <p class="hero-text">
+            这里收录胡诗钰的绘画、写生、国风主题与综合创作。先做成作品展示框架，后续可以继续补充简介、成长记录、按年份归档和分享页面。
+          </p>
+          <div class="hero-actions">
+            <a class="primary-link" href="#gallery">查看作品</a>
+            <button class="ghost-link" id="shuffleFeatured" type="button">换一张重点作品</button>
+          </div>
+        </div>
+
+        <article class="featured" id="featuredCard">
+          <img id="featuredImage" alt="" />
+          <div class="featured-info">
+            <span id="featuredDate"></span>
+            <h2 id="featuredTitle"></h2>
+            <button id="openFeatured" type="button">打开大图</button>
+          </div>
+        </article>
+      </section>
+
+      <section class="toolbar" aria-label="作品筛选">
+        <div>
+          <h2 id="gallery">作品墙</h2>
+          <p id="resultCount">正在整理作品</p>
+        </div>
+        <label class="search">
+          <span>搜索作品</span>
+          <input id="searchInput" type="search" placeholder="输入课题名" />
+        </label>
+        <div class="filters" id="filters" aria-label="分类筛选"></div>
+      </section>
+
+      <section class="gallery" id="galleryGrid" aria-live="polite"></section>
+
+      <section class="timeline-section" id="timeline">
+        <div class="section-heading">
+          <h2>课程时间线</h2>
+          <p>按课程日期排列，快速回看不同阶段的主题。</p>
+        </div>
+        <div class="timeline" id="timelineList"></div>
+      </section>
+
+      <section class="about" id="about">
+        <div>
+          <h2>关于这个框架</h2>
+          <p>
+            当前版本已经具备作品墙、分类、搜索、重点作品和大图预览。下一步可以加独立作品详情页、成长文字、年份筛选、手机分享样式和部署到线上。
+          </p>
+        </div>
+        <div class="stats" id="stats"></div>
+      </section>
+    </main>
+
+    <dialog class="lightbox" id="lightbox">
+      <button class="close" id="closeLightbox" type="button" aria-label="关闭">×</button>
+      <img id="lightboxImage" alt="" />
+      <div class="lightbox-caption">
+        <strong id="lightboxTitle"></strong>
+        <span id="lightboxMeta"></span>
+      </div>
+    </dialog>
+
+    <script src="artworks.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
