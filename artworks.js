@@ -1,5 +1,16 @@
 window.ARTWORKS = [
     {
+        "id":  0,
+        "title":  "扇子",
+        "category":  "综合材料",
+        "date":  "2026.06.21",
+        "file":  "assets/fan.jpg",
+        "thumb":  "assets/fan-thumb.jpg",
+        "bytes":  2299845,
+        "width":  4329,
+        "height":  5773
+    },
+    {
         "id":  1,
         "title":  "蛋糕",
         "category":  "水彩",
